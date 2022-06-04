@@ -220,7 +220,8 @@ def start_le_advertising(sock, min_interval=1000, max_interval=1000,
     """
     own_bdaddr_type = 0
     direct_bdaddr_type = 0
-    direct_bdaddr = (0,) * 6
+    # direct_bdaddr = (0,) * 6
+    direct_bdaddr = (0x9D, 0x0B, 0xEA, 0x4F, 0xD9, 0xD0)
     chan_map = 0x07  # All channels: 37, 38, 39
     filter = 0
 
